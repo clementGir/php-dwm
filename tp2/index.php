@@ -8,7 +8,7 @@
 
 	<body>
 		<header>
-			<a href="">GitHub</a>
+			<a href="https://github.com/clementGir/php-dwm/tree/master/tp2">GitHub</a>
 			<h1>Devenir membre</h1>
 		</header>
 		<div class="intro">
