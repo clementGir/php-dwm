@@ -158,3 +158,18 @@ li:active .label {
     background-color: white;
     color: black;
 }
+a {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    text-decoration: initial;
+    transition: .2s all;
+    -webkit-transition: .2s all;
+}
+a:hover{
+    background-color: black;
+    color: white;
+}

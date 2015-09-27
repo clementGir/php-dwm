@@ -76,6 +76,7 @@
 				answerThePoorGuy();
 			?>
 		</div>
+		<a href="https://github.com/clementGir/php-dwm/blob/master/index.php" target="_blank">GitHub</a>
 	</body>
 </html>
 

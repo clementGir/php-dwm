@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+}
+header {
+    height: 280px;
+    background: url("images/cercle.jpg") no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+header:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.9);
+}
+header h1 {
+    text-align: center;
+    margin: 0;
+    color: white;
+    margin-top: 120px;
+    font-size: 45px;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    left: 0;
+}
+a {
+    color: white;
+    position: absolute;
+    z-index: 1;
+    text-decoration: initial;
+    left: 10px;
+    top: 10px;
+}
+a:hover{
+    text-decoration: underline;
+}
+h4 {
+    margin: 0;
+    margin-bottom: 35px;
+    text-align: left;
+    font-size: x-large;
+    opacity: 0.5;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+form {
+    display: inline-block;
+    width: 100%;
+}
+ol {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+ol li:first-child{
+	display: none !important;
+}
+li {
+    margin-bottom: 15px;
+    list-style-type: none;
+    clear: both;
+    overflow: auto;
+}
+label {
+    width: 245px;
+    text-align: right;
+    float: left;
+    margin: 0 !important;
+    margin-top: 8px !important;
+    font-size: 14px;    
+}
+input, textarea, select {
+    width: 250px;
+    max-width: 250px;
+    float: left;
+    margin: 0 !important;
+    margin-left: 15px !important;
+    height: 35px;
+    border-radius: 2px !important;
+    border: 1px solid #BBBBBB !important;
+    box-shadow: none !important;
+}
+.required {
+    color: #BBBBBB;
+    margin-left: 15px;
+    font-size: small;
+    float: left;
+    margin-top: 10px;
+}
+.intro {
+    width: 96%;
+    max-width: 580px;
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    position: relative;
+}
+.intro:before, .intro:after {
+    position: absolute;
+    content: '"';
+    font-size: 106px;
+    top: -19px;
+    left: -55px;
+    color: #BBBBBB;
+}
+.intro:after{
+    right: -55px;
+    left: initial;
+}
+.adhesion {
+    box-shadow: 0 0 6px #555;
+    width: 96%;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 2px;
+    overflow: auto;
+}
+input[type="submit"] {
+    clear: both;
+    float: right;
+    width: initial;
+    margin-bottom: 20px !important;
+    margin-right: 20px !important;
+}
+.result {
+    border: 1px dotted tomato;
+    border-radius: 2px;
+    width: 96%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+.result p{
+    color: tomato;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.result.sent{
+    border: 1px dotted lime;
+}
+.result.sent p{
+    color: lime;
+}
+@media (max-width: 715px) {
+    .intro:before, .intro:after{
+        display: none;
+    }
+}
+@media (max-width: 620px) {
+    header{
+        height: 150px;
+    }   
+    header h1{
+        margin-top: 55px;
+        font-size: 35px;
+    }
+    .adhesion {
+        box-shadow: none;
+        padding: 0;
+    }
+    h4 {
+        margin-bottom: 25px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    input[type="submit"] {
+        float: none;
+        width: 100%;
+        margin-right: 0 !important;
+        margin-top: 25px !important;
+        height: 50px;
+    }
+    ol {
+        width: 100%;
+    }
+    label {
+        float: none;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 5px !important;
+        font-weight: 700;
+    }
+    input, textarea, select {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 !important;
+        height: 50px !important;
+    }
+    span.required {
+        margin-left: 0 !important;
+        margin-top: 2px !important;
+    }
+    .result {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
